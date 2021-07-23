@@ -14,7 +14,7 @@ import '../scss/Pages.scss';
 
 // Video / Image Imports
 import Logo from '../Images/Variations/GKL_NEON01.png';
-import Term01 from '../Images/term01.png';
+
 
 // JSX Component and Return
 
@@ -25,9 +25,9 @@ const Home = () => {
         <body>
  
             {/* Background Video */}
-            {/* <video id="homeVideo" autoPlay playsinline loop muted>
+            <video id="homeVideo" autoPlay playsinline loop muted>
             <source src={GKVideo} type="video/mp4" />
-            </video>  */}
+            </video> 
 
             
 
@@ -79,6 +79,10 @@ const Home = () => {
             
         </body>
     );
+
+
+
+    
 }
 
 // Default Export Method for Component

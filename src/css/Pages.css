@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: 'unsteady';
+    src: local('unsteady'), url(../Fonts/UNSTEADY.TTF) format('truetype');
+}
+
+@font-face {
+  font-family: 'obv';
+  src: local('obv'), url(../Fonts/ObveronFont.ttf) format('truetype');
+}
+
+
+
+
+
+        #homeVideo {
+            object-fit: cover;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        #homeGrid {
+            background-color: rgb(255, 255, 255);
+            position: fixed;
+            top: 0;
+        }

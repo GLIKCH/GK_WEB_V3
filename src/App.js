@@ -9,7 +9,7 @@ import GKIntro from './Pages/intro';
 
 
 // SCSS Imports
-import './scss/App.scss';
+import './css/App.css';
 
 // Image Imports
 

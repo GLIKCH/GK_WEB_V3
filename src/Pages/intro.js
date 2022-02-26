@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Routing Imports
-import GK_Nav from '../components/full_nav';
+import GKNav from '../components/full_nav';
 // import { BrowserRouter as Router, } from 'react-router-dom';
 
 // Component Imports
@@ -30,9 +30,9 @@ const Home = () => {
             <source src={GKVideo} type="video/mp4" />
             </video>
 
-            <div class="block1">.Section Test 1</div>
+            <div class="block1">.</div>
             <div class="block2">
-            <GK_Nav />
+            <GKNav />
             </div>
             <div class="block3">.</div>
             <div class="block4">.</div>

@@ -1,3 +1,8 @@
+// // // // // // // // // // Joel J. De Alba - Software Engineer // // // // // // // // // //
+// // // // // // // // // //     GK_WEB3.0 Blockchain Project    // // // // // // // // // //
+
+// // --> Component
+
 // Main JSX React imports
 import React from 'react';
 
@@ -21,21 +26,14 @@ const GK_Nav = () => {
     console.log(Logo);
 
     return (
-        <div className="navdiv">
-            <div class="Header">
+        <div className="Header">
+            <div className="full_nav_div">
 
                 {/* Navigation Left */}
                 <ul id="navl">
                     <li id="gknav"><a href="/">Home</a></li>
                     <li id="gknav"><a href="/shop">Shop</a></li>
                     <li id="gknav"><a href="/groups">Groups</a></li>
-                </ul>
-
-                {/* Navigation Logo Middle */}
-                <a href="/"><img id="homeLogo" src={Logo} alt="logo"></img></a>
-
-                {/* Navigation Right */}
-                <ul id="navr">
                     <li id="gknav"><a href="/code">Code</a></li>
                     <li id="gknav"><a href="/portfolio">News</a></li>
                     <li id="gknav"><a href="/contact">Contact</a></li>
@@ -43,11 +41,6 @@ const GK_Nav = () => {
 
             </div>
 </div>
-
-
-
-
-
     );
 }
 

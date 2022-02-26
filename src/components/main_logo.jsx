@@ -14,16 +14,21 @@ import React from 'react';
 // import Featured from '../components/content/FeaturedContent';
 
 // SCSS Imports
-import '../scss/Pages.scss';
+import '../css/Pages.css';
 
 // Video / Image Imports
-import Logo from '../Images/Variations/GKL_Primary_Yellow.png';
+import Logo from '../Images/test01.png';
 
 
 // JSX Component and Return
 
 const GK_logo = () => {
     return (
-/* Navigation Logo Middle */
-<a href="/"><img id="homeLogo" src={Logo} alt="logo"></img></a>
-    )}
+        <div class="main_logo">
+            <Logo />
+        </div>
+    );
+}
+
+// Default Export Method for Component
+export default GK_logo;

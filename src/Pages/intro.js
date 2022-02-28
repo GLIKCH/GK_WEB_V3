@@ -21,16 +21,14 @@ import '../css/Pages.css';
 const Home = () => {
     return(
         <body>
-            {/* Background Video */}
-            <video id="homeVideo" autoPlay playsinline loop muted>
-            <source src={GKVideo} type="video/mp4" />
-            </video>
-
-            <div id="homeGrid">
-
-            </div>
-            
+        {/* GK_Video */}
+        <video id="homeVideo" autoPlay playsinline loop muted>
+        <source src={GKVideo} type="video/mp4" />
+        </video>
+        {/* GK_Logo */}
+        <GKLogo className="logo_intro"/>.
         </body>
+        
     );
 
 }

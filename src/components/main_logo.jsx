@@ -24,8 +24,8 @@ import Logo from '../Images/test01.png';
 
 const GK_logo = () => {
     return (
-        <div class="main_logo">
-            <Logo />
+        <div id="logo_div">.
+            <img id="logo_img" src={Logo} alt="Logo" />
         </div>
     );
 }

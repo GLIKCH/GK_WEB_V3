@@ -8,21 +8,46 @@
   font-family: 'obv';
   src: local('obv'), url(../Fonts/ObveronFont.ttf) format('truetype');
 }
-
-
-
-
+body {
+    margin: 0;
+    overflow: hidden;
+}
 
         #homeVideo {
             object-fit: cover;
             width: 100vw;
-            height: 100vh;
-            position: relative;
-            top: 0;
+            height: 110vh;
+            position: fixed;
+            top: 1;
             left: 0;
         }
-        #homeGrid {
-            background-color: rgb(255, 255, 255);
-            position: fixed;
-            top: 0;
+        .logo_intro {
+            display: flex;
+            justify-content: center;
+            width: 200vw;
+            background-color: rgb(187, 5, 5);
+            position: absolute;
+            top: 1;
         }
+        #logo_div {
+            display: flex;
+            width: 60vw;
+            min-width: 50em;
+            min-height: 20vw;
+            background-color: rgb(0, 204, 255);
+            position: absolute;
+            top: 1;
+            }
+        #logo_img {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.568);
+            position: absolute;
+            top: 1;
+        }
+
+
+/* Full Navigation CSS */
+
+#gknav {
+    font-family: obv;
+}

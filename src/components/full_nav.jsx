@@ -14,7 +14,7 @@ import React from 'react';
 // import Featured from '../components/content/FeaturedContent';
 
 // SCSS Imports
-import '../scss/Pages.scss';
+import '../css/Pages.css';
 
 // Video / Image Imports
 import Logo from '../Images/Variations/GKL_Primary_Yellow.png';
@@ -26,21 +26,15 @@ const GK_Nav = () => {
     console.log(Logo);
 
     return (
-        <div className="Header">
-            <div className="full_nav_div">
-
+        <div className="NVH">
                 {/* Navigation Left */}
-                <ul id="navl">
-                    <li id="gknav"><a href="/">Home</a></li>
-                    <li id="gknav"><a href="/shop">Shop</a></li>
-                    <li id="gknav"><a href="/groups">Groups</a></li>
-                    <li id="gknav"><a href="/code">Code</a></li>
-                    <li id="gknav"><a href="/portfolio">News</a></li>
-                    <li id="gknav"><a href="/contact">Contact</a></li>
-                </ul>
-
-            </div>
-</div>
+                    <a href="/">Home</a>
+                    <a href="/shop">Shop</a>
+                    <a href="/groups">Groups</a>
+                    <a href="/code">Code</a>
+                    <a href="/portfolio">News</a>
+                    <a href="/contact">Contact</a>
+        </div>
     );
 }
 

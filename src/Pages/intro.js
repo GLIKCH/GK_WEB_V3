@@ -7,6 +7,7 @@ import React from 'react';
 // Component Imports
 import GKVideo from '../videos/GK_BG00.mp4';
 import GKLogo from '../components/main_logo.jsx';
+import GKNav from '../components/full_nav.jsx';
 
 // import Featured from '../components/content/FeaturedContent';
 
@@ -25,8 +26,12 @@ const Home = () => {
         <video id="homeVideo" autoPlay playsinline loop muted>
         <source src={GKVideo} type="video/mp4" />
         </video>
+        {/* GK_Nav */}
+        <GKNav className="NV1" />
         {/* GK_Logo */}
-        <GKLogo className="logo_intro"/>.
+        <div className="SQ1">SQ1</div>
+        <GKLogo className="logo_intro"/>
+        <div className="SQ2">SQ2</div>
         </body>
         
     );

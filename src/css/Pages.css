@@ -1,18 +1,25 @@
 
-@font-face {
-    font-family: 'unsteady';
-    src: local('unsteady'), url(../Fonts/UNSTEADY.TTF) format('truetype');
-}
+        /* [Font Face Inserts] */
+        @font-face {
+            font-family: 'unsteady';
+            src: local('unsteady'), url(../Fonts/UNSTEADY.TTF) format('truetype');
+        }
 
-@font-face {
-  font-family: 'obv';
-  src: local('obv'), url(../Fonts/ObveronFont.ttf) format('truetype');
-}
-body {
-    margin: 0;
-    overflow: hidden;
-}
+        @font-face {
+        font-family: 'obv';
+        src: local('obv'), url(../Fonts/ObveronFont.ttf) format('truetype');
+        }
 
+        body {
+            display: grid;
+            justify-content: center;
+            grid-template-areas: 
+            "NV1 NV1 NV1"
+            "SQ1 l SQ2";
+            margin: 0;
+            overflow: hidden;
+}
+        /* Intro.js Video Tag [Background Video] */
         #homeVideo {
             object-fit: cover;
             width: 100vw;
@@ -21,33 +28,79 @@ body {
             top: 1;
             left: 0;
         }
-        .logo_intro {
-            display: flex;
-            justify-content: center;
-            width: 200vw;
-            background-color: rgb(187, 5, 5);
-            position: absolute;
+        a {
+            text-align: center;
+            margin: 12px;
+        }
+        .NV1 {
+            background-color: greenyellow;
+            display: grid;
+            grid-area: NV1;
+            position: relative; 
             top: 1;
+
+            /* Test Ops >> FIXME! */
+            border-color: antiquewhite;
+            border-style: solid;
+            border-width: 3px;
+        }
+        .NVH {
+            position: relative;
+            top: 1;
+            justify-items: center;
+            background-color: wheat;
+            width: 20vw;
+            height: 0vh;
+        }
+    
+        /* GK Navigation CSS Props. */
+
+
+        /* SQ or Small Square Areas >>>>>>>>>>>*/
+        .SQ1,
+        .SQ2 {
+            position: relative;
+            top: 1;
+            width: 20vw;
+            height: 22vh;
+            /* Test Ops >> FIXME! */
+            border-color: antiquewhite;
+            border-style: solid;
+            border-width: 3px;
+            /* background-color: darkorange; */
+        }
+        .SQ1 {
+            display: grid;
+            grid-area: SQ1;
+        }
+        .SQ2 {
+            display: grid;
+            grid-area: SQ2;
+        }
+        /* SQ or Small Square Areas <<<<<<<<<<*/
+
+        /* GK_Logo CSS Props. >>>>>>>>>> */
+        .logo_intro {
+            display: grid;
+            grid-area: l;
+            width: 60vw;
+            max-height: 22vh;
+            position: relative;
+            top: 1;
+            
         }
         #logo_div {
-            display: flex;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            position: relative;
+            top: 1;
             width: 60vw;
-            min-width: 50em;
-            min-height: 20vw;
-            background-color: rgb(0, 204, 255);
-            position: absolute;
-            top: 1;
-            }
-        #logo_img {
-            display: flex;
-            background-color: rgba(255, 255, 255, 0.568);
-            position: absolute;
-            top: 1;
+            min-height: 15vh;
+            /* background-color: blueviolet; */
         }
-
-
-/* Full Navigation CSS */
-
-#gknav {
-    font-family: obv;
-}
+        #logo_img {
+            width: 60vw;
+            max-width: 40em;
+        }
+        /* GK_Logo CSS Props. <<<<<<<<<<< */
